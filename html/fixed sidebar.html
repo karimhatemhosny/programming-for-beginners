@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Fixed sidebar</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="menu"></div>
+      <script src="../scripts/menu.js"></script>
+
+      <h1>Making a fixed sidebar</h1>
+      <p>Step 1: add html</p>
+      <pre><code class="language-html">
+&lt;div class="sidebar"&gt;
+  &lt;h2 class="sidebar-heading"&gt;Hello&lt;/h2&gt;
+  &lt;a href="url or file"&gt;Text to display&lt;/a&gt;
+  &lt;a href="url or file"&gt;Text to display&lt;/a&gt;
+  &lt;a href="url or file"&gt;Text to display&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <p>
+        Step 2: add css<br />
+        Note: you put your enitre website in a div with a class called 'main'
+      </p>
+
+      <pre><code class="language-css">
+.sidebar{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #818181;
+  display: block;
+  word-spacing: normal;
+  margin-top: 8px;
+}
+.main {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+.sidebar-heading{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #818181;
+  display: block;
+  word-spacing: normal;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+</code>
+</pre>
+    </div>
+
+    <link rel="stylesheet" href="../styles/a11y-dark.min.css" />
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/html.min.js"></script>
+    <script src="../scripts/css.min.js"></script>
+    <script src="../scripts/javascript.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+
+</body>
+</html>
