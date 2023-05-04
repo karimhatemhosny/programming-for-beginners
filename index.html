@@ -21,11 +21,31 @@
       li{
         margin-bottom: 5px;
       }
+      .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+        background-color: #282A35 !important;
+      }
+      .item{
+        display: flex;
+        width: 33%;
+        text-align: center;
+      }
+      #html {
+        background-color: orange;
+      }
+      #css {
+        background-color: aqua;
+      }
+      #js {
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
-        <h1>HTML courses</h1>
-        <ul>
+        <!-- <h1>HTML courses</h1> -->
+        <!-- <ul>
             <li><a href="html/label and input.html">Label and input</a></li>
             <li><a href="html/link.html">Links</a></li>
             <li><a href="html/lists.html">Lists</a></li>
@@ -42,6 +62,20 @@
             <li><a href="html/favicon.html">Add a Favicon</a></li>
             <li><a href="html/fixed sidebar.html">Add a Fixed sidebar</a></li>
             <li><a href="html/loader.html">Make a loader</a></li>
-        </ul>
+        </ul> -->
+        <div class="container">
+          <div class="item" id="html">
+            <h1>HTML</h1>
+            <p>HTML is used to make the structre of a webpage</p>
+          </div>
+          <div class="item" id="css">
+            <h1>CSS</h1>
+            <p>CSS is used to style a webpage</p>
+          </div>
+          <div class="item" id="js">
+            <h1>JavaScript</h1>
+            <p>JavaScript is used to add functionality a webpage</p>
+          </div>
+        </div>
   </body>
 </html>
