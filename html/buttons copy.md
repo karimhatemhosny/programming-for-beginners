@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Buttons</title>
+  </head>
+  <body>
+    <div class="menu"></div>
+    <script src="../scripts/menu.js"></script>
+    <h1>Buttons</h1>
+    <p>Buttons are used to show a button like this:</p>
+    <br /><button>click me</button>
+    <!-- <pre><code class="language-html">&lt;button&gt;Text to display&lt;/button&gt;</code></pre> -->
+    ```html
+    &lt;button&gt;Text to display&lt;button&gt;
+    ```
+    <br />
+    <iframe src="https://dev.livecodes.io/?x=id/k7fzhebzf6p"></iframe>
+    <link rel="stylesheet" href="../styles/a11y-dark.min.css" />
+    <script src="../scripts/highlight.min.js"></script>
+    <script src="../scripts/languages/html.min.js"></script>
+    <script src="../scripts/languages/css.min.js"></script>
+    <script src="../scripts/languages/javascript.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    
+  </body>
+</html>
