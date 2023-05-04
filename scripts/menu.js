@@ -19,6 +19,7 @@ const menuContent = `
                     <a href="buttons.html">Buttons</a>
                     <a href="text decoration.html">Text decoration</a>
                     <a href="images and videos.html">Images and Videos</a>
+					<a href='pre.html'>Pre</a>
                 </div>
             </div>
         </div>
