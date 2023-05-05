@@ -9,24 +9,72 @@
       body {
         font-family: Arial, Helvetica, sans-serif;
         scroll-behavior: smooth;
+        background-color: orange;
+        height: 90vh;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
       }
     </style>
   </head>
   <body>
-
-    <select>
+    <div id="container">
+      <h1>Select a tag in the dropdown to go there</h1>
+      <select>
         <option value="">Select here</option>
         <option value="button">Buttons</option>
         <option value="cai">Classes and Ids</option>
         <option value="comments">Comments</option>
+        <option value="das">Divs and Spans</option>
+        <option value="hed">Headings</option>
+        <option value="ifr">Iframes</option>
+        <option value="iav">Images and Videos</option>
+        <option value="lai">Label and Input</option>
+        <option value="link">Links</option>
+        <option value="lists">Lists</option>
+        <option value="pre">Pre</option>
+        <option value="td">Text Decoration</option>
       </select>
+    </div>
     <script>
       const el = document.querySelector("select");
 
       const urls = {
         button: "../html/button.html",
-        cai: "../html/classes and ids",
+        cai: "../html/classes and ids.html",
         comments: "../html/comments.html",
+        das: "../html/divs and spans.html",
+        hed: "../html/headings.html",
+        ifr: "../html/iframes.html",
+        iav: "../html/images and videos.html",
+        lai: "../html/label and input.html",
+        link: '../html/link.html',
+        lists: '../html/lists.html',
+        pre: '../html/pre.html',
+        td: '../html/text decoration.html'
       };
 
       el.addEventListener("change", () => {

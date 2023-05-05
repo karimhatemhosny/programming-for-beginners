@@ -36,11 +36,11 @@ const menuContent = `
         <a href="javascript:void(0)" class="dropbtn">How to</a>
         <div class="dropdown-content">
         <div class="column">
-            <a href="favicon.html">Add a Favicon</a>
-            <a href="loader.html">Make a loader</a>
+            <a href="../how to/favicon.html">Add a Favicon</a>
+            <a href="../how to/loader.html">Make a loader</a>
         </div>
         <div class="column">
-            <a href="fixed sidebar.html">Make a fixed sidebar</a>
+            <a href="../how to/fixed sidebar.html">Make a fixed sidebar</a>
         </div>
         </div>
     </li>
