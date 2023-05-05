@@ -1,85 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <style type="text/css">
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>main page</title>
 
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      a:hover{
-        text-decoration: underline;
-      }
-      li{
-        margin-bottom: 5px;
-      }
-      .container{
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-        padding: 20px;
-        border-radius: 8px;
-        background-color: #282A35 !important;
-      }
-      .item{
-        display: flex;
-        width: 50%;
-        text-align: center;
-        margin: 5px;
-      }
-      #html {
-        background-color: orange;
-        border-radius: 12px;
-      }
-      #html:hover {
-        cursor: pointer;
-      }
-      #css {
-        background-color: aqua;
-        border-radius: 12px;
-      }
-      #css:hover {
-        text-decoration: none;
-      }
-      #js {
-        background-color: yellow;
-        border-radius: 12px;
-      }
-      #js:hover {
-        text-decoration: none;
-      }
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
+  <style type="text/css">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 90vh;
+      scroll-behavior: smooth;
+      background-color: #282a35 !important;
+    }
 
-      /* Track */
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-      }
-      
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: #888; 
-        border-radius: 5px;
-      }
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-      }
-    </style>
-  </head>
-  <body>
-        <!-- <h1>HTML courses</h1> -->
-        <!-- <ul>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      gap: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #282a35 !important;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      width: calc(50% - 10px);
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    #html {
+      background-color: orange;
+      border-radius: 12px;
+    }
+
+    #html:hover {
+      cursor: pointer;
+    }
+
+    #css {
+      background-color: aqua;
+      border-radius: 12px;
+    }
+
+    #css:hover {
+      text-decoration: none;
+    }
+
+    #js {
+      background-color: yellow;
+      border-radius: 12px;
+    }
+
+    #js:hover {
+      text-decoration: none;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <h1>HTML courses</h1> -->
+  <!-- <ul>
             <li><a href="html/label and input.html">Label and input</a></li>
             <li><a href="html/link.html">Links</a></li>
             <li><a href="html/lists.html">Lists</a></li>
@@ -97,27 +116,28 @@
             <li><a href="html/fixed sidebar.html">Add a Fixed sidebar</a></li>
             <li><a href="html/loader.html">Make a loader</a></li>
         </ul> -->
-        <div class="container">
-          <div class="item" id="html">
-            <h1>HTML</h1>
-            <p>HTML is used to make the structre of a webpage</p>
-          </div>
-          <div class="item" id="css">
-            <h1>CSS</h1>
-            <p>CSS is used to style a webpage</p>
-          </div>
-          <div class="item" id="js">
-            <h1>JavaScript</h1>
-            <p>JavaScript is used to add functionality a webpage</p>
-          </div>
-        </div>
-        <script>
-          html = document.querySelector('#html')
-          css = document.querySelector('#css')
-          js = document.querySelector('#js')
-          html.onclick = function() {
-            window.open('https://kareem-hatem.github.io/programming-for-beginners/html/pre.html')
-          }
-        </script>
-  </body>
+  <div class="container">
+    <div class="item" id="html">
+      <h1>HTML</h1>
+      <p>HTML is used to make the structre of a webpage</p>
+    </div>
+    <div class="item" id="css">
+      <h1>CSS</h1>
+      <p>CSS is used to style a webpage</p>
+    </div>
+    <div class="item" id="js">
+      <h1>JavaScript</h1>
+      <p>JavaScript is used to add functionality a webpage</p>
+    </div>
+  </div>
+  <script>
+    html = document.querySelector('#html')
+    css = document.querySelector('#css')
+    js = document.querySelector('#js')
+    html.onclick = function () {
+      window.open('https://kareem-hatem.github.io/programming-for-beginners/html/pre.html')
+    }
+  </script>
+</body>
+
 </html>
