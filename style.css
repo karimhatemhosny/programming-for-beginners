@@ -106,7 +106,7 @@ ul {
   background-color: #333;
 }
 
-li {
+.dd-list {
   float: left;
 }
 
@@ -189,4 +189,17 @@ li.dropdown {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+#container{
+  background-color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#website {
+  display: flex;
+  color: #FFFFFF;
+}
+#footer-list {
+  list-style: none;
 }
