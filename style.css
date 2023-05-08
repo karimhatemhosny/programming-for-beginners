@@ -62,7 +62,7 @@ p {
   color: #f1f1f1;
 }
 svg {
-  height: 2.5em;
+  padding-left:  .3em;
 }
 table {
   border: 1px solid black;
@@ -191,15 +191,49 @@ li.dropdown {
   background: #555; 
 }
 #container{
-  background-color: #555;
+  background-color: #444;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 #website {
+  flex-direction: column;
   display: flex;
   color: #FFFFFF;
+  width: 33%;
+}
+#more {
+  flex-direction: column;
+  display: flex;
+  color: #FFFFFF;
+  width: 33%;
+}
+#karim {
+  flex-direction: column;
+  display: flex;
+  color: #FFFFFF;
+  width: 33%;
+}
+#copy {
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  margin: 15px 0px;
 }
 #footer-list {
   list-style: none;
+  padding-left: 4px;
+}
+footer a {
+  padding: 0;
+  margin-bottom: 10px;
+}
+footer a:hover {
+  animation: link 1s;
+  text-decoration: underline;
+}
+footer p {
+  padding-left: 4px;
+}
+footer #name {
+  color: #888
 }
