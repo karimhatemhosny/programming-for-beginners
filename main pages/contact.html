@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-weight: 700;
+      }
+      #text {
+        display: block;
+        height: 250px;
+        width: 80%;
+        border-radius: 7px;
+        border: 2px solid #555;
+        resize: vertical;
+        padding-left: 5px;
+        padding-top: 5px;
+      }
+      #btn {
+        display: block;
+        width: 20%;
+        height: 30px;
+        margin: auto;
+        color: white;
+        background-color: #555;
+        border: 1px solid #000;
+        border-radius: 3px;
+      }
+      #main {
+        border: 1px solid #555;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        box-shadow: 0 10px 15px -3px #0000001a, 0 4px 6px -2px #0000000d;
+        width: 95%;
+        margin: auto;
+      }
+      label {
+        display: block;
+        margin: 0.8em 0;
+        font-weight: 550;
+      }
+      .input {
+        width: 80%;
+        height: 1.9rem;
+        border-radius: 5px;
+        border: 2px solid #555;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu"></div>
+    <script src="../scripts/menu.js"></script>
+    <h1>Contact</h1>
+    <form id="main" action="https://submit-form.com/cwWhHdUx" method="post">
+      <label>Name</label>
+      <input type="text" name="Name" class="input" />
+      <label>Email</label>
+      <input type="email" name="Email" class="input" />
+      <label>Message</label>
+      <textarea id="text" name="Message"></textarea><br />
+      <p style="font-weight: bold;">Please don't do any random, trolling or other kinds of messaging</p>
+      <button id="btn" type="submit">Send</button>
+    </form>
+    <footer></footer>
+    <script src="../scripts/footer.js"></script>
+  </body>
+</html>

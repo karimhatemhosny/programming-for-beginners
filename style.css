@@ -2,12 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-.code-area {
-  background-color: #eee;
-  font-family: "Courier New";
-  border: 1px solid black;
-  padding: 10px;
-}
 .livecodes {
   text-decoration: none;
   background-color: #05c46b;
@@ -62,7 +56,7 @@ p {
   color: #f1f1f1;
 }
 svg {
-  padding-left:  .3em;
+  padding-left: 0.3em;
 }
 table {
   border: 1px solid black;
@@ -98,7 +92,7 @@ th {
     transform: rotate(360deg);
   }
 }
-ul {
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -110,7 +104,7 @@ ul {
   float: left;
 }
 
-li a,
+.dd-list a,
 .dropbtn {
   display: inline-block;
   color: white;
@@ -119,7 +113,6 @@ li a,
   text-decoration: none;
 }
 
-li a:hover,
 .dropdown:hover .dropbtn {
   background-color: #666; /* Dark grey */
 }
@@ -131,7 +124,7 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px; 
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -177,20 +170,20 @@ li.dropdown {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-#container{
+#container {
   background-color: #444;
   display: flex;
   flex-wrap: wrap;
@@ -198,24 +191,24 @@ li.dropdown {
 #website {
   flex-direction: column;
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 33%;
 }
 #more {
   flex-direction: column;
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 33%;
 }
 #karim {
   flex-direction: column;
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 33%;
 }
 #copy {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   margin: 15px 0px;
 }
@@ -224,16 +217,23 @@ li.dropdown {
   padding-left: 4px;
 }
 footer a {
+  text-decoration: none;
+  color: white;
   padding: 0;
   margin-bottom: 10px;
 }
 footer a:hover {
-  animation: link 1s;
   text-decoration: underline;
 }
 footer p {
   padding-left: 4px;
 }
 footer #name {
-  color: #888
+  color: #888;
+}
+footer {
+  margin-top: 1em;
+}
+#home {
+  color: white;
 }

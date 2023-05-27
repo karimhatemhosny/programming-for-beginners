@@ -1,12 +1,12 @@
 const menuContent = `
 <ul>
-    <li class='dd-list'><a href="../index.html">Home</a></li>
+    <li class='dd-list'><a id='home' href="../index.html">Home</a></li>
     <li class="dropdown dd-list">
         <a href="javascript:void(0)" class="dropbtn">HTML</a>
         <div class="dropdown-content">
             <div class="row">
                 <div class="column">
-                    <a href="label and input.html">Label and input</a>
+                    <a href="../html/label and input.html">Label and input</a>
                     <a href="../html/link.html">Links</a>
                     <a href="../html/lists.html">Lists</a>
                     <a href="../html/classes and ids.html">Classes and ids</a>
