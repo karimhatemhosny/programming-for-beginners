@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!-- Font Awesome Icon Library -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <title>Rate us</title>
+      <style>
+        body#rate {
+          border: 1px solid #888;
+          border-radius: 5px;
+          padding: 10px;
+          box-shadow: 5px 5px 5px #888888;
+          font-family: "Arial";
+          height: 90vh
+        }
+        .fa-star:hover {
+          color: orange;
+        }
+        input[type="radio"] {
+          width: 0;
+          height: 0;
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          font-weight: 600;
+          font-size: x-large;
+          margin: 20px 0;
+        }
+        #btn {
+          display: block;
+          width: 20%;
+          height: 39px;
+          margin: auto;
+          color: white;
+          background-color: #555;
+          border: 1px solid #000;
+          border-radius: 3px;
+          font-size: large;
+        }
+        #btn:hover {
+          cursor: pointer;
+        }
+        span:hover{
+          cursor: pointer;
+        }
+
+      </style>
+    </head>
+    <body id='rate'>
+        <form action="https://submit-form.com/cwWhHdUx" method='post'>  
+            <h1>Please rate your experience using Programming for beginners</h2>
+            <div class="content">
+                <input type="radio" name="rating" id="first" value="1 star" required/>
+                <input type="radio" name="rating" id="second" value="2 stars" required/>
+                <input type="radio" name="rating" id="third" value="3 stars" required/>
+                <input type="radio" name="rating" id="fourth" value="4 stars"required/>
+                <input type="radio" name="rating" id="fifth" value="5 stars"required/>
+
+                <span class="fa fa-star fa-10x" id="fst"></span>
+                <span class="fa fa-star" id="sec"></span>
+                <span class="fa fa-star" id="thr"></span>
+                <span class="fa fa-star" id="four"></span>
+                <span class="fa fa-star" id="five"></span>
+                <p id="description"></p>
+            </div>
+            <button id="btn" type="submit">Done</button>
+        </form>
+        <script>
+            let fst = document.querySelector("#fst");
+            let sec = document.querySelector("#sec");
+            let thr = document.querySelector("#thr");
+            let four = document.querySelector("#four");
+            let fifth = document.querySelector("#five");
+            let p = document.querySelector("#description");
+
+            fst.onmouseover = function () {
+            fst.style.color = "black";
+            sec.style.color = "black";
+            thr.style.color = "black";
+            four.style.color = "black";
+            fifth.style.color = "black";
+            p.innerText = "Terrible";
+            fst.style.color = "orange";
+            };
+            sec.onmouseover = function () {
+            fst.style.color = "black";
+            sec.style.color = "black";
+            thr.style.color = "black";
+            four.style.color = "black";
+            fifth.style.color = "black";
+            p.innerText = "Pretty bad";
+            fst.style.color = "orange";
+            sec.style.color = "orange";
+            };
+            thr.onmouseover = function () {
+            fst.style.color = "black";
+            sec.style.color = "black";
+            thr.style.color = "black";
+            four.style.color = "black";
+            fifth.style.color = "black";
+            p.innerText = "Decent";
+            fst.style.color = "orange";
+            sec.style.color = "orange";
+            thr.style.color = "orange";
+            };
+            four.onmouseover = function () {
+            fst.style.color = "black";
+            sec.style.color = "black";
+            thr.style.color = "black";
+            four.style.color = "black";
+            fifth.style.color = "black";
+            p.innerText = "Pretty good";
+            fst.style.color = "orange";
+            sec.style.color = "orange";
+            thr.style.color = "orange";
+            four.style.color = "orange";
+            };
+            fifth.onmouseover = function () {
+            fst.style.color = "black";
+            sec.style.color = "black";
+            thr.style.color = "black";
+            four.style.color = "black";
+            fifth.style.color = "black";
+            p.innerText = "Awesome";
+            fst.style.color = "orange";
+            sec.style.color = "orange";
+            thr.style.color = "orange";
+            four.style.color = "orange";
+            fifth.style.color = "orange";
+            };
+
+            fst.onclick = function () {
+            document.querySelector("#first").checked = "checked";
+            };
+            sec.onclick = function () {
+            document.querySelector("#second").checked = "checked";
+            };
+            thr.onclick = function () {
+            document.querySelector("#third").checked = "checked";
+            };
+            four.onclick = function () {
+            document.querySelector("#fourth").checked = "checked";
+            };
+            fifth.onclick = function () {
+            document.querySelector("#fifth").checked = "checked";
+            };
+
+        </script>
+    </body>
+  </html>
