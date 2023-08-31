@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 | Programming for beginners</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h1{
-            font-size: 600;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 20px;
+      }
+      button {
+        padding: 10px;
+        margin: auto;
+        display: block;
+        font-size: large;
+        margin-top: 50px;
+      }
     </style>
-</head>
-<body>
-    <h1>404</h1>
-    <p>The page you where seraching for is not found please check the URL of the webpage</p>
+  </head>
+  <body>
+    <h1><b>Page Not Found</b></h1>
+    <p>We could not find the page you were looking for.</p>
+    <p>
+      Please check that the URL of the page is correct or go to the main page
+    </p>
     <button>Back to Programming for beginners</button>
+    <script src="../scripts/footer.js"></script>
+    <footer></footer>
     <script>
-        let btn = document.querySelector('button')
-        btn.onclick = function() {
-            window.open('https://programming-for-beginners.pages.dev')
-        }
+      let btn = document.querySelector("button");
+      btn.onclick = function () {
+        window.open("https://programming-for-beginners.pages.dev");
+      };
     </script>
-</body>
+  </body>
 </html>
